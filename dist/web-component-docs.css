@@ -1,0 +1,57 @@
+.component-status {
+  text-transform: capitalize;
+}
+
+.component-status::before {
+  display: inline-block;
+  content: "";
+  margin-right: 0.25rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+}
+
+.component-status--ready::before {
+  background-color: seagreen;
+}
+
+.component-status--draft::before {
+  background-color: goldenrod;
+}
+
+.component-status--deprecated::before {
+  background-color: crimson;
+}
+
+.component-meta-table {
+  overflow-x: auto;
+}
+
+.component-meta-table table {
+  overflow: auto;
+  width: 100%;
+  min-width: 700px;
+}
+
+.markdown-section .component-method-signature {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.markdown-section .component-method-signature + p {
+  margin-top: 0.25rem;
+  margin-left: 0.4rem;
+}
+
+.markdown-section .component-method-signature code {
+  white-space: inherit;
+}
+
+.component-method-options {
+  margin-left: 1.5rem;
+}
+
+.component-method-options dd {
+  margin-top: 0.3rem;
+  margin-left: 0.4rem;
+}
