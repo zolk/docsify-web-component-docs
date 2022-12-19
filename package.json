@@ -2,13 +2,14 @@
   "name": "docsify-web-component-docs",
   "version": "1.0.0",
   "description": "A Docsify plugin for documenting web components.",
-  "main": "dist/web-component-docs.js",
+  "main": "dist/web-component-docs.min.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepublishOnly": "npm run build",
+    "build": "esbuild src/web-component-docs.js --bundle --minify --sourcemap --outfile=dist/web-component-docs.min.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/zolk/docsify-web-component-docs#readme",
   "devDependencies": {
+    "esbuild": "^0.16.9",
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
