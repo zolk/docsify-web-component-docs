@@ -12,7 +12,7 @@
  */
 function renderPropertiesTable(props) {
   return `
-    <table>
+    <table class="metadata">
       <thead>
         <tr>
           <th scope="col">Property</th>
@@ -97,7 +97,7 @@ function renderMethodsList(methods) {
 
 function renderEventsTable(events) {
   return `
-    <table>
+    <table class="metadata">
       <thead>
         <tr>
           <th scope="col">Name</th>
@@ -128,7 +128,7 @@ function renderEventsTable(events) {
 
 function renderSlotsTable(slots) {
   return `
-    <table>
+    <table class="metadata">
       <thead>
         <tr>
           <th scope="col">Name</th>
@@ -159,7 +159,7 @@ function renderSlotsTable(slots) {
 
 function renderCssPartsTable(parts) {
   return `
-    <table>
+    <table class="metadata">
       <thead>
         <tr>
           <th scope="col">Name</th>
@@ -184,7 +184,7 @@ function renderCssPartsTable(parts) {
 
 function renderCssPropertiesTable(properties) {
   return `
-    <table>
+    <table class="metadata">
       <thead>
         <tr>
           <th scope="col">Name</th>
