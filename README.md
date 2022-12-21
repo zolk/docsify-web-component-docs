@@ -24,6 +24,8 @@ including this field in your CEM file.
 
 ## Usage
 
+### Setup & Installation
+
 ```html
 <script>
   window.$docsify = {
