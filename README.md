@@ -65,7 +65,7 @@ documentation information:
 [component-metadata:button]
 ```
 
-💡 Pro-tip: If your filename matches the name of your component (e.g., `button.md`)
+💡 **Protip:** If your filename matches the name of your component (e.g., `button.md`)
 then you can exclude the component name in the tag (e.g., just `[component-status]).
 
 #### [component-description:button]
