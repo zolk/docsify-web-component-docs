@@ -2,7 +2,7 @@
 
 # docsify-web-component-docs
 
-A Docsify plugin for displaying documenting for Custom Elements (Web Components).
+A Docsify plugin for displaying documentation for Custom Elements (Web Components).
 
 ## Requirements
 
@@ -19,7 +19,8 @@ for a fully integrated example:
 - Documentation example for a component: [button.ts](https://github.com/zolk/ds-starter-kit/blob/main/src/components/button/button.ts)
 
 This project supports an additional `status` field, which is not part of the
-default CEM specification. Refer to [this example config](https://github.com/zolk/ds-starter-kit/blob/main/custom-elements-manifest.config.js) for including this field in your CEM file.
+default CEM specification. Refer to aforementioned config example for including
+this field in your CEM file.
 
 ## Usage
 
@@ -62,6 +63,9 @@ documentation information. For example:
 [component-metadata:button]
 ```
 
+Pro-tip: If your filename matches the name of your component (e.g., `button.md`)
+then you can exclude the component name in the tag (e.g., just `[component-status]).
+
 #### [component-description:button]
 
 The description of your component, as provided in the first line of your
@@ -98,10 +102,9 @@ export default class DsButton extends LitElement {
 }
 ```
 
-(This field requires a [custom tag in your CEM config](https://github.com/zolk/ds-starter-kit/blob/main/custom-elements-manifest.config.js), as noted in Requirements.)
-
-The default styles for this plugin support "draft", "ready", and "deprecated",
-but you can provide any desired value to this field and style it as desired.
+This field requires a [custom tag in your CEM config](https://github.com/zolk/ds-starter-kit/blob/main/custom-elements-manifest.config.js), as noted in Requirements. The default styles for this plugin support
+"draft", "ready", and "deprecated", but you can provide any desired value to
+this field and style it as desired.
 
 #### [component-metadata:button]
 
@@ -158,7 +161,7 @@ By default, the server will boot at http://localhost:3000.
 ## Acknowledgements
 
 This plugin was inspired by and builds upon work done for the [Shoelace](https://shoelace.style)
-component library documentation by Cory LaViska.
+component library documentation by [Cory LaViska](https://twitter.com/claviska).
 
 ## License
 
