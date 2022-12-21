@@ -50,8 +50,8 @@ Default styles, which you can override or replace with your own:
 
 ### Available Tags for Displaying Documentation
 
-Just include the following tags in your Markdown file to display component
-documentation information. For example:
+Include the following tags in your Markdown file to display component
+documentation information:
 
 ```md
 ## Button
@@ -65,7 +65,7 @@ documentation information. For example:
 [component-metadata:button]
 ```
 
-Pro-tip: If your filename matches the name of your component (e.g., `button.md`)
+💡 Pro-tip: If your filename matches the name of your component (e.g., `button.md`)
 then you can exclude the component name in the tag (e.g., just `[component-status]).
 
 #### [component-description:button]
