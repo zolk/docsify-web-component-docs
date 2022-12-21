@@ -54,13 +54,13 @@ Include the following tags in your Markdown file to display component
 documentation information:
 
 ```md
-## Button
+# Button
 
 [component-status:button]
 
 [component-description:button]
 
-### API Documentation
+## API Documentation
 
 [component-metadata:button]
 ```
