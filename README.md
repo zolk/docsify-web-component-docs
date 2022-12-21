@@ -66,7 +66,7 @@ documentation information:
 ```
 
 💡 **Protip:** If your filename matches the name of your component (e.g., `button.md`)
-then you can exclude the component name in the tag (e.g., just `[component-status]).
+then you can exclude the component name in the tag (e.g., just `[component-status]`).
 
 #### [component-description:button]
 
@@ -129,7 +129,7 @@ file (see requirements).
 - Type: `String`
 - Default: `undefined`
 
-**Required.** The prefix used by your components, for example `ds` if your
+**Required.** The prefix used by your components. For example, `ds` if your
 components use names such as `ds-button` and `ds-card`.
 
 ## Live Example
