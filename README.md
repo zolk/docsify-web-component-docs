@@ -19,8 +19,8 @@ for a fully integrated example:
 - Documentation example for a component: [button.ts](https://github.com/zolk/ds-starter-kit/blob/main/src/components/button/button.ts)
 
 This project supports an additional `status` field, which is not part of the
-default CEM specification. Refer to aforementioned config example for including
-this field in your CEM file.
+default CEM specification. Refer to the aforementioned config example for
+including this field in your CEM file.
 
 ## Usage
 
