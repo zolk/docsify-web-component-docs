@@ -31,7 +31,6 @@ including this field in your CEM file.
   window.$docsify = {
     // ... (your existing Docsify config)
     componentDocs: {
-      prefix: "ds",
       manifestPath: "/dist/custom-elements.json",
     },
   };
@@ -56,19 +55,19 @@ documentation information:
 ```md
 # Button
 
-[component-status:button]
+[component-status:ds-button]
 
-[component-description:button]
+[component-description:ds-button]
 
 ## API Documentation
 
-[component-metadata:button]
+[component-metadata:ds-button]
 ```
 
-💡 **Protip:** If your filename matches the name of your component (e.g., `button.md`)
+💡 **Protip:** If your filename matches the name of your component (e.g., `ds-button.md`)
 then you can exclude the component name in the tag (e.g., just `[component-status]`).
 
-#### [component-description:button]
+#### [component-description:ds-button]
 
 The description of your component, as provided in the first line of your
 component's documentation block:
@@ -85,7 +84,7 @@ export default class DsButton extends LitElement {
 }
 ```
 
-#### [component-status:button]
+#### [component-status:ds-button]
 
 The status of your component, as provided in your documentation's component
 block:
@@ -108,7 +107,7 @@ This field requires a [custom tag in your CEM config](https://github.com/zolk/ds
 "draft", "ready", and "deprecated", but you can provide any desired value to
 this field and style it as desired.
 
-#### [component-metadata:button]
+#### [component-metadata:ds-button]
 
 Complete metadata tables for slots, properties, events, methods, CSS parts, and
 CSS custom properties.
@@ -129,8 +128,10 @@ file (see requirements).
 - Type: `String`
 - Default: `undefined`
 
-**Required.** The prefix used by your components. For example, `ds` if your
-components use names such as `ds-button` and `ds-card`.
+An optional standardized prefix used by all your components. For example, `ds`
+if all your components are named such as `ds-button` and `ds-card`. Setting
+this feature will allow you to exclude the prefix when specifying the component
+name in tags.
 
 ## Live Example
 
