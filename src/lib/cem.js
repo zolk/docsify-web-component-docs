@@ -1,4 +1,6 @@
-export const TAG_PREFIX = `${window.$docsify.componentDocs.prefix}-`;
+const configPrefix = window.$docsify.componentDocs.prefix;
+
+export const TAG_PREFIX = configPrefix ? `${configPrefix}-` : "";
 
 export const customElements = fetch(window.$docsify.componentDocs.manifestPath)
   .then((res) => res.json())

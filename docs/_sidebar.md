@@ -1,2 +1,2 @@
 - [Home](/)
-- [Card](/card)
+- [Card](/ds-card)

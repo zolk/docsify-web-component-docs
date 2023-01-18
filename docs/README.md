@@ -4,10 +4,10 @@ A Docsify plugin for documenting web components.
 
 ## Button
 
-[component-status:button]
+[component-status:ds-button]
 
-[component-description:button]
+[component-description:ds-button]
 
 <ds-button>Button</ds-button>
 
-[component-metadata:button]
+[component-metadata:ds-button]
