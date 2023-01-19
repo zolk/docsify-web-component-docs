@@ -11,12 +11,12 @@ file for this plugin to function. You can generate one for your project by
 incorporating the [CEM Analyzer](https://custom-elements-manifest.open-wc.org/analyzer/getting-started/)
 into your build process.
 
-Refer to the [DS Starter Kit project](https://github.com/zolk/ds-starter-kit)
+Refer to [Docsify Breeze](https://github.com/zolk/docsify-breeze)
 for a fully integrated example:
 
-- CEM Analyzer config: [custom-elements-manifest.config.js](https://github.com/zolk/ds-starter-kit/blob/main/custom-elements-manifest.config.js)
-- ESBuild script that runs `cem analyze` as part of the build process: [build.js](https://github.com/zolk/ds-starter-kit/blob/main/scripts/build.js)
-- Documentation example for a component: [button.ts](https://github.com/zolk/ds-starter-kit/blob/main/src/components/button/button.ts)
+- CEM Analyzer config: [custom-elements-manifest.config.js](https://github.com/zolk/docsify-breeze/blob/main/custom-elements-manifest.config.js)
+- ESBuild script that runs `cem analyze` as part of the build process: [build.js](https://github.com/zolk/docsify-breeze/blob/main/scripts/build.js)
+- Documentation example for a component: [button.ts](https://github.com/zolk/docsify-breeze/blob/main/src/components/button/button.ts)
 
 This project supports an additional `status` field, which is not part of the
 default CEM specification. Refer to the aforementioned config example for
@@ -103,7 +103,7 @@ export default class DsButton extends LitElement {
 }
 ```
 
-This field requires a [custom tag in your CEM config](https://github.com/zolk/ds-starter-kit/blob/main/custom-elements-manifest.config.js), as noted in Requirements. The default styles for this plugin support
+This field requires a [custom tag in your CEM config](https://github.com/zolk/docsify-breeze/blob/main/custom-elements-manifest.config.js), as noted in Requirements. The default styles for this plugin support
 "draft", "ready", and "deprecated", but you can provide any desired value to
 this field and style it as desired.
 
