@@ -210,7 +210,7 @@ function renderCssPropertiesTable(properties) {
 export function renderMetadata(metadata) {
   let result = "";
 
-  const members = metadata.members?.filter(
+  const members = metadata?.members?.filter(
     (member) => member.description && member.privacy !== "private"
   );
   const props = members?.filter((prop) => {
@@ -248,7 +248,7 @@ export function renderMetadata(metadata) {
     `;
   }
 
-  if (metadata.events?.length) {
+  if (metadata?.events?.length) {
     result += `
       ### Events
 
@@ -257,7 +257,7 @@ export function renderMetadata(metadata) {
     `;
   }
 
-  if (metadata.slots?.length) {
+  if (metadata?.slots?.length) {
     result += `
       ### Slots
 
@@ -266,7 +266,7 @@ export function renderMetadata(metadata) {
     `;
   }
 
-  if (metadata.cssProperties?.length) {
+  if (metadata?.cssProperties?.length) {
     result += `
       ### CSS Custom Properties
 
@@ -275,7 +275,7 @@ export function renderMetadata(metadata) {
     `;
   }
 
-  if (metadata.cssParts?.length) {
+  if (metadata?.cssParts?.length) {
     result += `
       ### CSS Parts
 
