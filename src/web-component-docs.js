@@ -67,7 +67,7 @@ function webComponentDocs(hook) {
     // Wrap tables for responsive horizontal scrolling
     //
     const content = document.querySelector(".content");
-    const tables = [...content.querySelectorAll("table")];
+    const tables = [...content.querySelectorAll("table.metadata")];
 
     tables.map((table) => {
       table.outerHTML = `
