@@ -1,6 +1,6 @@
 {
   "name": "docsify-web-component-docs",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A Docsify plugin for documenting web components.",
   "type": "module",
   "main": "dist/web-component-docs.min.js",
