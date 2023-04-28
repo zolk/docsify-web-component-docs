@@ -1,3 +1,7 @@
+## 1.1.1
+
+- Fix issue with horizontal table scroll being applied to table elements other than metadata tables.
+
 ## 1.1.0
 
 - The `prefix` config setting is now optional, enabling use with non-standardized
