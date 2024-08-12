@@ -1,3 +1,8 @@
+## 1.2.0
+
+- Adds a styling hook and includes the term "Deprecated." in the description of
+  properties/attributes marked as `deprecated` in the Custom Elements Manifest.
+
 ## 1.1.2
 
 - Fix issue with horizontal table scroll being applied to table elements other than metadata tables.
