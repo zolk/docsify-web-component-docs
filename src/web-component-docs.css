@@ -4,7 +4,7 @@
 
 .component-status::before {
   display: inline-block;
-  content: "";
+  content: '';
   margin-right: 0.25rem;
   width: 0.6rem;
   height: 0.6rem;
@@ -31,6 +31,14 @@
   overflow: auto;
   width: 100%;
   min-width: 700px;
+}
+
+.component-meta-table tr.row-deprecated th code {
+  text-decoration: line-through;
+}
+
+.component-meta-table .deprecated {
+  font-weight: bold;
 }
 
 .markdown-section .component-method-signature {
