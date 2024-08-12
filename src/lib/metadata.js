@@ -24,7 +24,7 @@ function renderPropertiesTable(props) {
       <tbody>
         ${props
           .map((prop) => {
-            return `<tr>
+            return `<tr ${prop.deprecated ? "class='row-deprecated'" : ""}>
                 <th scope="row">
                   <code>${prop.name}</code>
                   ${
@@ -35,10 +35,13 @@ function renderPropertiesTable(props) {
                       : ``
                   }
                 </th>
-                <td>${prop.description.replace(
-                  /`(.*?)`/g,
-                  "<code>$1</code>"
-                )}</td>
+                <td>
+                ${
+                  prop.deprecated
+                    ? '<span class="deprecated">Deprecated.</span>'
+                    : ""
+                }
+                ${prop.description.replace(/`(.*?)`/g, "<code>$1</code>")}</td>
                 <td><code>${prop.type.text.replace(/^\| /m, "")}</code></td>
                 <td>${
                   prop.default ? `<code>${prop.default}</code>` : "&ndash;"

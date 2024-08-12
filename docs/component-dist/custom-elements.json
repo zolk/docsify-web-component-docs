@@ -154,6 +154,7 @@
               },
               "default": "\"medium\"",
               "description": "The button's size.",
+              "deprecated": "true",
               "attribute": "size",
               "reflects": true
             },
@@ -292,6 +293,7 @@
               },
               "default": "\"medium\"",
               "description": "The button's size.",
+              "deprecated": "true",
               "fieldName": "size"
             },
             {
